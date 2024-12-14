@@ -1,0 +1,17 @@
+{
+    "name": "quiz", 
+    "version": "1.0.0", 
+    "description": "A short description of your app", 
+    "main": "index.js", 
+    "scripts": {
+      "start": "node index.js"
+    }, 
+    "dependencies": {
+      "express": "^4.17.1",
+      "mongoose": "^5.10.9"
+    },
+    "engines": {
+      "node": "14.x"
+    }
+  }
+  
