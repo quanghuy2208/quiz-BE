@@ -1,6 +1,6 @@
 const Category_quizService = require("../services/QuizService");
-const JwtService = require("../services/JwtService");
-const Category_quiz = require("../models/UserModel");
+// const JwtService = require("../services/JwtService");
+// const Category_quiz = require("../models/UserModel");
 
 const createCategory_quiz = async (req, res) => {
     try {
