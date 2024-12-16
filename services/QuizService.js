@@ -41,7 +41,9 @@ const getCategory_quiz = () => {
         status: "OK",
         message: "Success",
         data: category_quiz,
+
       });
+      console.log(resolve)
     } catch (e) {
       reject(e);
     }
