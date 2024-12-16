@@ -1,10 +1,10 @@
 const express = require("express");
 const router = express.Router();
 const Category_quizControllers = require("../Controllers/QuizControllers");
-const {
-  authMiddleWare,
-  authUserMiddleWare,
-} = require("../middleware/authMiddleware");
+// const {
+//   authMiddleWare,
+//   authUserMiddleWare,
+// } = require("../middleware/authMiddleware");
 
 router.get("/createCategory_quiz", Category_quizControllers.createCategory_quiz);
 // router.get("/get-details/:id", Category_quizControllers.getDetailsCategory_quiz);
