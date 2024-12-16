@@ -33,6 +33,22 @@ const createCategory_quiz = (newCategory_quizData) => {
   });
 };
 
+const getCategory_quiz = () => {
+  return new Promise(async (resolve, reject) => {
+    try {
+      const category_quiz = await Category_quiz.find().sort({ createdAt: -1, updatedAt: -1 });
+      resolve({
+        status: "OK",
+        message: "Success",
+        data: category_quiz,
+      });
+    } catch (e) {
+      reject(e);
+    }
+  });
+};
+
 module.exports = {
   createCategory_quiz,
+  getCategory_quiz,
 };
