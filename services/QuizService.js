@@ -1,4 +1,4 @@
-const Category_quiz = require("../models/Category_quizModel");
+const Category_quiz = require("../models/QuizModel");
 
 const createCategory_quiz = (newCategory_quizData) => {
   return new Promise(async (resolve, reject) => {
