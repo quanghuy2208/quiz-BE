@@ -1,7 +1,7 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
-const routes = require("./routers");
+const routers = require("./routers");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
 dotenv.config();
@@ -16,7 +16,7 @@ app.use(express.json({ limit: "50mb" }));
 app.use(express.urlencoded({ limit: "50mb", extended: true }));
 app.use(express.json());
 app.use(cookieParser());
-routes(app);
+routers(app);
 
 mongoose
   .connect(`${process.env.MONGO_DB}`)
