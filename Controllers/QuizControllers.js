@@ -19,7 +19,7 @@ const createCategory_quiz = async (req, res) => {
   };
 
   const getCategory_quiz = async (req, res) => {
-    console.log(res)
+    console.log("aaaaaaaaaaaaaaaaa")
     try {
       const response = await Category_quizService.getCategory_quiz();
       return res.status(200).json(response);
