@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const Category_quizControllers = require("../Controllers/Category_quizControllers");
+const Category_quizControllers = require("../Controllers/QuizControllers");
 const {
   authMiddleWare,
   authUserMiddleWare,
