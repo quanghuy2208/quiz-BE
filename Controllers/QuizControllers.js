@@ -1,4 +1,4 @@
-const Category_quizService = require("../services/Category_quizService");
+const Category_quizService = require("../services/QuizService");
 const JwtService = require("../services/JwtService");
 const Category_quiz = require("../models/UserModel");
 
